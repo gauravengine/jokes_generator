@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { // function with no parameters
     document.querySelector('#newjoke').onclick = function () {
        // event.preventDefault();
         document.querySelector('#buildup').innerHTML = '';
@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     let tweetpost = `https://twitter.com/intent/tweet?text=${tweetText}`;
                     window.open(tweetpost);
                 }
+            })
+            .catch(error => {
+                console.log('Error: ',error);
             });
 
     }
