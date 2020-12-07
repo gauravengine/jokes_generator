@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => { // function with no parame
                 }
             })
             .catch(error => {
-                console.log('Error: ',error);
+                console.log('Error: ',error); // such that when things crash they crash in predictable way
             });
 
     }
