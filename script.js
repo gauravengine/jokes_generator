@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#newjoke').onclick = function () {
-        event.preventDefault();
+       // event.preventDefault();
         document.querySelector('#buildup').innerHTML = '';
         document.querySelector('#punchline').innerHTML = '';
         fetch('https://official-joke-api.appspot.com/jokes/random')
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let x = document.querySelector('#buildup');
                 x.innerHTML = data.setup;
                 let y = document.querySelector('#punchline');
-                let s = "https://twitter.com/intent/tweet?text=" + data.setup + data.punchline;
+                //let s = "https://twitter.com/intent/tweet?text=" + data.setup + data.punchline;
                 setTimeout(() => {
                     y.innerHTML = data.punchline;
                 }, 3000);
