@@ -22,4 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
     }
+    document.querySelector('#tweetnow').onclick = () =>{
+        alert('First click New Joke');
+    }
 });
