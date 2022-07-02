@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => { // function with no parame
        // event.preventDefault();
         document.querySelector('#buildup').innerHTML = '';
         document.querySelector('#punchline').innerHTML = '';
-        fetch('https://official-joke-api.appspot.com/jokes/random')
+        fetch('https://karljoke.herokuapp.com/jokes/random')
             .then(response => response.json())
             .then(data => {
                 let x = document.querySelector('#buildup');
